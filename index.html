@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Lobster – Premium Clothing & Uniforms</title>
+  <meta name="description"
+    content="Lobster's offers premium men's wear, women's wear, school uniforms, hotel uniforms, customised clothing, suits, shirts and pants." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button id="scrollTopBtn" aria-label="Back to top">&#8679;</button>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <div class="logo-circle">L</div>
+        <div class="logo-text">
+          <span class="logo-name">LOBSTER</span>
+          <span class="logo-sub">Premium Clothing</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav id="desktopNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#categories" class="nav-link">Categories</a>
+
+        <!-- Catalogue Dropdown -->
+        <div class="nav-item-dropdown">
+          <button class="nav-link dropdown-trigger" id="catalogueBtn">
+            Catalogue <span class="dropdown-arrow">&#9660;</span>
+          </button>
+          <div class="dropdown-menu" id="catalogueMenu">
+            <a href="#catalogue" class="dropdown-item" data-filter="men">
+              <span class="drop-icon">👔</span> Men's Wear
+            </a>
+            <a href="#catalogue" class="dropdown-item" data-filter="women">
+              <span class="drop-icon">👗</span> Women's Wear
+            </a>
+            <a href="#catalogue" class="dropdown-item" data-filter="school">
+              <span class="drop-icon">🎒</span> School / College Uniforms
+            </a>
+            <a href="#catalogue" class="dropdown-item" data-filter="hotel">
+              <span class="drop-icon">🏨</span> Hotel Uniforms
+            </a>
+            <a href="#catalogue" class="dropdown-item" data-filter="customised">
+              <span class="drop-icon">✂️</span> Customised Uniforms
+            </a>
+            <a href="#catalogue" class="dropdown-item" data-filter="suits">
+              <span class="drop-icon">🤵</span> Suits
+            </a>
+            <a href="#catalogue" class="dropdown-item" data-filter="shirtpant">
+              <span class="drop-icon">👕</span> Shirt / Pant
+            </a>
+          </div>
+        </div>
+
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#contact" class="nav-cta">Get a Quote</a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mob-link">Home</a>
+      <a href="#about" class="mob-link">About Us</a>
+      <a href="#categories" class="mob-link">Categories</a>
+      <div class="mob-dropdown">
+        <button class="mob-link mob-drop-btn" id="mobCatalogueBtn">Catalogue &#9660;</button>
+        <div class="mob-drop-content" id="mobCatalogueContent">
+          <a href="#catalogue" class="mob-sub-link" data-filter="men">Men's Wear</a>
+          <a href="#catalogue" class="mob-sub-link" data-filter="women">Women's Wear</a>
+          <a href="#catalogue" class="mob-sub-link" data-filter="school">School / College Uniforms</a>
+          <a href="#catalogue" class="mob-sub-link" data-filter="hotel">Hotel Uniforms</a>
+          <a href="#catalogue" class="mob-sub-link" data-filter="customised">Customised Uniforms</a>
+          <a href="#catalogue" class="mob-sub-link" data-filter="suits">Suits</a>
+          <a href="#catalogue" class="mob-sub-link" data-filter="shirtpant">Shirt / Pant</a>
+        </div>
+      </div>
+      <a href="#contact" class="mob-link">Contact Us</a>
+      <a href="#contact" class="mob-cta">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- ===================== SECTION 1 : HERO ===================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-blur"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Est. Since 1985</div>
+      <h1 class="hero-title">
+        Crafting <em>Elegance,</em><br />Wearing <span class="hero-accent">Legacy</span>
+      </h1>
+      <p class="hero-desc">
+        Premium quality fabrics, custom uniforms and ready-to-wear clothing — tailored for every occasion and every walk
+        of life.
+      </p>
+      <div class="hero-btns">
+        <a href="#catalogue" class="btn-red">Explore Catalogue</a>
+        <a href="#about" class="btn-outline">Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span><span class="stat-plus">+</span>
+          <p>Years Legacy</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+          <p>Designs</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10000">0</span><span class="stat-plus">+</span>
+          <p>Customers</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-side">
+      <div class="hero-img-frame">
+        <img src="images/hero_banner.png" alt="Premium Clothing" class="hero-main-img" />
+        <div class="hero-float-card">
+          <span>⭐</span>
+          <p>40+ Years<br />of Excellence</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- Red Marquee Strip -->
+  <div class="marquee-bar">
+    <div class="marquee-inner" id="marqueeInner">
+      <span>Premium Quality</span><span class="mx">✦</span>
+      <span>Men's Wear</span><span class="mx">✦</span>
+      <span>Women's Wear</span><span class="mx">✦</span>
+      <span>School Uniforms</span><span class="mx">✦</span>
+      <span>Hotel Uniforms</span><span class="mx">✦</span>
+      <span>Customised Clothing</span><span class="mx">✦</span>
+      <span>Suits</span><span class="mx">✦</span>
+      <span>Shirt &amp; Pant</span><span class="mx">✦</span>
+      <span>Premium Quality</span><span class="mx">✦</span>
+      <span>Men's Wear</span><span class="mx">✦</span>
+      <span>Women's Wear</span><span class="mx">✦</span>
+      <span>School Uniforms</span><span class="mx">✦</span>
+      <span>Hotel Uniforms</span><span class="mx">✦</span>
+      <span>Customised Clothing</span><span class="mx">✦</span>
+      <span>Suits</span><span class="mx">✦</span>
+      <span>Shirt &amp; Pant</span><span class="mx">✦</span>
+    </div>
+  </div>
+
+  <!-- ===================== SECTION 2 : ABOUT US ===================== -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="about-grid">
+        <!-- Left: Text (slides in from left) -->
+        <div class="about-text slide-from-left">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">Rooted in Tradition,<br /><em>Driven by Excellence</em></h2>
+          <p class="about-para">
+            At Lobster's, we embody a rich legacy of over four decades, standing tall as one of India's most trusted names
+            in premium clothing and uniforms. Our unwavering commitment to quality craftsmanship and innovation defines
+            every stitch we make.
+          </p>
+          <p class="about-para">
+            From premium suiting to school and hotel uniforms — each product is crafted with precision and care for
+            families from every walk of life.
+          </p>
+          <div class="about-features">
+            <div class="about-feat">
+              <div class="feat-icon">🧵</div>
+              <div>
+                <h4>Premium Quality</h4>
+                <p>Finest raw materials sourced carefully</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="feat-icon">✂️</div>
+              <div>
+                <h4>Expert Tailoring</h4>
+                <p>Skilled craftsmanship in every piece</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="feat-icon">🏆</div>
+              <div>
+                <h4>Award Winning</h4>
+                <p>Recognised for excellence</p>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="feat-icon">🌿</div>
+              <div>
+                <h4>Sustainable</h4>
+                <p>Eco-conscious production</p>
+              </div>
+            </div>
+          </div>
+          <a href="#catalogue" class="btn-red mt-btn">View Our Catalogue &rarr;</a>
+        </div>
+        <!-- Right: Image (slides in from right) -->
+        <div class="about-image slide-from-right">
+          <div class="about-img-wrap">
+            <img src="images/about_brand.png" alt="About Lalit's" class="about-img" />
+            <div class="about-badge">
+              <span class="ab-num">40+</span>
+              <span class="ab-text">Years<br />of Trust</span>
+            </div>
+            <div class="about-dots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3 : CATEGORIES (OVERVIEW) ===================== -->
+  <section id="categories" class="categories-section">
+    <div class="section-container">
+      <div class="section-head fade-up">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Our Product <em>Categories</em></h2>
+        <p class="section-sub">Explore our wide range of premium clothing categories curated for every need.</p>
+      </div>
+      <div class="cat-grid">
+        <a href="#catalogue" class="cat-card fade-up" data-filter="men" style="--delay:0.05s">
+          <div class="cat-img-wrap"><img src="images/mens_wear.png" alt="Men's Wear" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>Men's Wear</h3>
+            <p>Suiting · Shirting · Readymade</p>
+          </div>
+        </a>
+        <a href="#catalogue" class="cat-card fade-up" data-filter="women" style="--delay:0.1s">
+          <div class="cat-img-wrap"><img src="images/womens_wear.png" alt="Women's Wear" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>Women's Wear</h3>
+            <p>Fabrics · Voiles · Readymade</p>
+          </div>
+        </a>
+        <a href="#catalogue" class="cat-card fade-up" data-filter="school" style="--delay:0.15s">
+          <div class="cat-img-wrap"><img src="images/uniforms.png" alt="School Uniforms" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>School / College</h3>
+            <p>Uniforms · Sportswear</p>
+          </div>
+        </a>
+        <a href="#catalogue" class="cat-card fade-up" data-filter="hotel" style="--delay:0.2s">
+          <div class="cat-img-wrap"><img src="images/uniforms.png" alt="Hotel Uniforms" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>Hotel Uniforms</h3>
+            <p>Front Desk · Kitchen · Housekeeping</p>
+          </div>
+        </a>
+        <a href="#catalogue" class="cat-card fade-up" data-filter="customised" style="--delay:0.25s">
+          <div class="cat-img-wrap"><img src="images/fabric_collection.png" alt="Customised" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>Customised</h3>
+            <p>Bespoke · Corporate · Events</p>
+          </div>
+        </a>
+        <a href="#catalogue" class="cat-card fade-up" data-filter="suits" style="--delay:0.3s">
+          <div class="cat-img-wrap"><img src="images/mens_wear.png" alt="Suits" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>Suits</h3>
+            <p>Formal · Business · Wedding</p>
+          </div>
+        </a>
+        <a href="#catalogue" class="cat-card fade-up" data-filter="shirtpant" style="--delay:0.35s">
+          <div class="cat-img-wrap"><img src="images/ready_to_stitch.png" alt="Shirt Pant" class="cat-img" /></div>
+          <div class="cat-info">
+            <h3>Shirt / Pant</h3>
+            <p>Casual · Formal · Custom</p>
+          </div>
+        </a>
+        <a href="#contact" class="cat-card cat-card-cta fade-up" style="--delay:0.4s">
+          <div class="cat-cta-inner">
+            <div class="cat-cta-icon">✂️</div>
+            <h3>Custom Order?</h3>
+            <p>Contact us for bespoke clothing requirements</p>
+            <span class="btn-red-sm">Enquire Now</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4 : CATALOGUE ===================== -->
+  <section id="catalogue" class="catalogue-section">
+    <div class="section-container">
+      <div class="section-head fade-up">
+        <div class="section-label">Our Catalogue</div>
+        <h2 class="section-title">Browse Our <em>Collection</em></h2>
+        <p class="section-sub">Filter by category to find exactly what you're looking for.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men's</button>
+        <button class="filter-btn" data-filter="women">Women's</button>
+        <button class="filter-btn" data-filter="school">School</button>
+        <button class="filter-btn" data-filter="hotel">Hotel</button>
+        <button class="filter-btn" data-filter="customised">Custom</button>
+        <button class="filter-btn" data-filter="suits">Suits</button>
+        <button class="filter-btn" data-filter="shirtpant">Shirt/Pant</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+
+        <div class="product-card" data-category="men">
+          <div class="prod-img-wrap">
+            <img src="images/mens_wear.png" alt="Men's Formal Suit" class="prod-img" />
+            <div class="prod-badge">Men's Wear</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Premium Formal Suit</h4>
+            <p class="prod-cat">Men's Wear</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Available</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="men">
+          <div class="prod-img-wrap">
+            <img src="images/ready_to_stitch.png" alt="Men's Shirt" class="prod-img" />
+            <div class="prod-badge">Men's Wear</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Cotton Dress Shirt</h4>
+            <p class="prod-cat">Men's Wear</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Available</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="women">
+          <div class="prod-img-wrap">
+            <img src="images/womens_wear.png" alt="Women's Saree" class="prod-img" />
+            <div class="prod-badge">Women's Wear</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Elegant Silk Saree</h4>
+            <p class="prod-cat">Women's Wear</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Available</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="women">
+          <div class="prod-img-wrap">
+            <img src="images/fabric_collection.png" alt="Women's Fabric" class="prod-img" />
+            <div class="prod-badge">Women's Wear</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Premium Voile Fabric</h4>
+            <p class="prod-cat">Women's Wear</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Available</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="school">
+          <div class="prod-img-wrap">
+            <img src="images/uniforms.png" alt="School Uniform" class="prod-img" />
+            <div class="prod-badge">School</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">School Uniform Set</h4>
+            <p class="prod-cat">School / College Uniforms</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Bulk Orders</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="school">
+          <div class="prod-img-wrap">
+            <img src="images/uniforms.png" alt="College Uniform" class="prod-img" />
+            <div class="prod-badge">College</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">College Sports Kit</h4>
+            <p class="prod-cat">College Uniforms</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Bulk Orders</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hotel">
+          <div class="prod-img-wrap">
+            <img src="images/uniforms.png" alt="Hotel Uniform" class="prod-img" />
+            <div class="prod-badge">Hotel</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Front Desk Uniform</h4>
+            <p class="prod-cat">Hotel Uniforms</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Custom</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="hotel">
+          <div class="prod-img-wrap">
+            <img src="images/uniforms.png" alt="Kitchen Uniform" class="prod-img" />
+            <div class="prod-badge">Hotel</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Kitchen / Chef Wear</h4>
+            <p class="prod-cat">Hotel Uniforms</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Custom</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="customised">
+          <div class="prod-img-wrap">
+            <img src="images/fabric_collection.png" alt="Customised" class="prod-img" />
+            <div class="prod-badge">Custom</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Corporate Customised Uniform</h4>
+            <p class="prod-cat">Customised</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Bespoke</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="suits">
+          <div class="prod-img-wrap">
+            <img src="images/mens_wear.png" alt="Suit" class="prod-img" />
+            <div class="prod-badge">Suits</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">3-Piece Business Suit</h4>
+            <p class="prod-cat">Suits</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Available</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="suits">
+          <div class="prod-img-wrap">
+            <img src="images/mens_wear.png" alt="Wedding Suit" class="prod-img" />
+            <div class="prod-badge">Suits</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Wedding Suit</h4>
+            <p class="prod-cat">Suits</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Custom</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="shirtpant">
+          <div class="prod-img-wrap">
+            <img src="images/ready_to_stitch.png" alt="Shirt Pant" class="prod-img" />
+            <div class="prod-badge">Shirt/Pant</div>
+            <div class="prod-overlay"><a href="#contact" class="btn-white-small">Enquire</a></div>
+          </div>
+          <div class="prod-info">
+            <h4 class="prod-name">Formal Shirt &amp; Trouser</h4>
+            <p class="prod-cat">Shirt / Pant</p>
+            <div class="prod-footer">
+              <span class="prod-availability avail">Available</span>
+              <a href="#contact" class="prod-enquire">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end product-grid -->
+
+      <div class="catalogue-cta fade-up">
+        <p>Can't find what you're looking for?</p>
+        <a href="#contact" class="btn-red">Request Custom Order</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 5 (orig 4) : CLIENT LOGOS ===================== -->
+  <section id="clients" class="clients-section">
+    <div class="section-container">
+      <div class="section-head fade-up">
+        <div class="section-label">Our Clients</div>
+        <h2 class="section-title">Trusted by <em>Leading Brands</em></h2>
+        <p class="section-sub">Hover to highlight. We are proud to serve these wonderful organisations.</p>
+      </div>
+      <div class="clients-track-wrap fade-up">
+        <div class="clients-track" id="clientsTrack">
+          <!-- Client logos (placeholder cards, user to replace images) -->
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏫</span>
+              <p>St. Xavier's School</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏨</span>
+              <p>Grand Hyatt</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏢</span>
+              <p>TechCorp India</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🎓</span>
+              <p>DY Patil College</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏥</span>
+              <p>Apollo Hospital</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏬</span>
+              <p>Reliance Retail</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>✈️</span>
+              <p>Air India</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏦</span>
+              <p>HDFC Bank</p>
+            </div>
+          </div>
+          <!-- Duplicates for seamless loop -->
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏫</span>
+              <p>St. Xavier's School</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏨</span>
+              <p>Grand Hyatt</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏢</span>
+              <p>TechCorp India</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🎓</span>
+              <p>DY Patil College</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏥</span>
+              <p>Apollo Hospital</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏬</span>
+              <p>Reliance Retail</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>✈️</span>
+              <p>Air India</p>
+            </div>
+          </div>
+          <div class="client-logo-card">
+            <div class="client-logo-inner"><span>🏦</span>
+              <p>HDFC Bank</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 6 (orig 5) : TESTIMONIALS ===================== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-container">
+      <div class="section-head fade-up">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What Our <em>Clients Say</em></h2>
+      </div>
+
+      <div class="testi-carousel-wrap fade-up">
+        <div class="testi-carousel" id="testiCarousel">
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"The school uniforms we ordered from Lobster are outstanding. The fabric is durable,
+              the colors are vibrant and the stitching is perfect. Our students love wearing them every day!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">RS</div>
+              <div>
+                <strong>Ramesh Singh</strong>
+                <p>Principal, St. Xavier's School</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"We ordered hotel uniforms for our entire staff — front desk, housekeeping and
+              kitchen. The quality and consistency across 200+ pieces was remarkable. Highly recommend Lobster!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">PK</div>
+              <div>
+                <strong>Priya Kapoor</strong>
+                <p>GM, Grand Hyatt Mumbai</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"My wedding suit from LLobster's was absolutely perfect. The tailoring, the fit, the
+              fabric — everything was world-class. I received so many compliments on my special day!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">AM</div>
+              <div>
+                <strong>Arjun Mehta</strong>
+                <p>Satisfied Customer, Pune</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"We needed customised uniforms for our 150-person corporate team. Lobster's delivered
+              on time, within budget, and the quality exceeded our expectations. Great service!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SD</div>
+              <div>
+                <strong>Sneha Desai</strong>
+                <p>HR Head, TechCorp India</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end testi-carousel -->
+
+        <!-- Controls -->
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 7 (orig 6) : CONTACT ===================== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="contact-grid">
+        <!-- Left Info -->
+        <div class="contact-info slide-from-left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's <em>Connect</em></h2>
+          <p class="contact-desc">Whether you need uniforms, custom clothing, or fabric — we're ready to help. Reach out
+            to us through any of the channels below.</p>
+
+          <div class="contact-details">
+            <div class="contact-det-item">
+              <div class="contact-det-icon">📍</div>
+              <div>
+                <h4>Visit Us</h4>
+                <p>123 Fabric Lane, Textile District, Mumbai – 400001</p>
+              </div>
+            </div>
+            <div class="contact-det-item">
+              <div class="contact-det-icon">📞</div>
+              <div>
+                <h4>Call Us</h4>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+            </div>
+            <div class="contact-det-item">
+              <div class="contact-det-icon">✉️</div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:info@lobster.com">info@lobster.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-links">
+            <p class="social-heading">Follow Us</p>
+            <div class="social-icons">
+              <a href="https://wa.me/919876543210" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" class="social-icon youtube" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap slide-from-right">
+          <form id="contactForm" class="contact-form" novalidate>
+            <h3 class="form-title">Send an Enquiry</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone *</label>
+                <input type="tel" id="fphone" name="fphone" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="femail" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="finterest">Interested In</label>
+              <select id="finterest" name="finterest">
+                <option value="">Select category...</option>
+                <option value="men">Men's Wear</option>
+                <option value="women">Women's Wear</option>
+                <option value="school">School / College Uniforms</option>
+                <option value="hotel">Hotel Uniforms</option>
+                <option value="custom">Customised Clothing</option>
+                <option value="suits">Suits</option>
+                <option value="shirtpant">Shirt / Pant</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" name="fmsg" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn-red form-submit">Send Enquiry &#8594;</button>
+            <div id="formMsg" class="form-success hidden">✅ Thank you! We'll contact you within 24 hours.</div>
+          </form>
+        </div>
+      </div>
+
+      <!-- WhatsApp Floating Button -->
+      <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-circle small">L</div>
+            <div>
+              <span class="logo-name">LOBSTER'S</span>
+              <span class="logo-sub">Premium Clothing</span>
+            </div>
+          </div>
+          <p>A trusted name in premium clothing, uniforms and textiles for over four decades. Quality you can feel in
+            every thread.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp" class="fsoc whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="fsoc facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="fsoc instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="fsoc youtube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#clients">Our Clients</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Products</h4>
+          <ul>
+            <li><a href="#catalogue">Men's Wear</a></li>
+            <li><a href="#catalogue">Women's Wear</a></li>
+            <li><a href="#catalogue">School Uniforms</a></li>
+            <li><a href="#catalogue">Hotel Uniforms</a></li>
+            <li><a href="#catalogue">Suits</a></li>
+            <li><a href="#catalogue">Shirt / Pant</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-contact-list">
+            <li><span>📍</span><span>123 Fabric Lane, Textile District, Mumbai – 400001</span></li>
+            <li><span>📞</span><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><span>✉️</span><a href="mailto:info@lobster.com">info@lobster.com</a></li>
+            <li><span>🕘</span><span>Mon – Sat: 10am – 7pm</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lobster's Premium Clothing. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
